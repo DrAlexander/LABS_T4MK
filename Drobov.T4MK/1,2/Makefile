@@ -1,4 +1,4 @@
-all: main.cpp BigNumb.cpp
+all: BI.cpp BigNumb.cpp
 	g++ -c -fPIC BigNumb.cpp
 	g++ -shared -o libBigNumb.so BigNumb.o
 	LD_LIBRARY_PATH=./ g++ BI.cpp -lBigNumb -I. -Wl,-rpath,. -L. -o BI_2

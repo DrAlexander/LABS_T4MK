@@ -1,5 +1,6 @@
 #include <iostream>
 #include "BigNumb.h"
+#include <string.h>
 using std::cout;
 
 using namespace std;
